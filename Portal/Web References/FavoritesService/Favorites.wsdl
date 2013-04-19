@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://189.254.103.147:8088/sia/services/Favorites" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://189.254.103.147:8088/sia/services/Favorites" targetNamespace="http://189.254.103.147:8088/sia/services/Favorites" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="askFavResponse">
+    <wsdl:part name="askFavReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="askFavRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="msisdn" type="soapenc:string" />
+    <wsdl:part name="url" type="soapenc:string" />
+    <wsdl:part name="title" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="Favorites">
+    <wsdl:operation name="askFav" parameterOrder="userId passwd msisdn url title">
+      <wsdl:input name="askFavRequest" message="impl:askFavRequest" />
+      <wsdl:output name="askFavResponse" message="impl:askFavResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FavoritesSoapBinding" type="impl:Favorites">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="askFav">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="askFavRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="askFavResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Favorites" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FavoritesService">
+    <wsdl:port name="Favorites" binding="impl:FavoritesSoapBinding">
+      <wsdlsoap:address location="http://189.254.103.147:8088/sia/services/Favorites" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0"?>
+<configuration>
+  <configSections>
+    <sectionGroup name="applicationSettings" type="System.Configuration.ApplicationSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+      <section name="Portal.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+    </sectionGroup>
+  </configSections>
+  <connectionStrings>
+    <add name="FusionMovil" connectionString="server=localhost;user id=root; password=prueba; database=fusionmovil; pooling=true" providerName="MySql.Data.MySqlClient" /> 
+    <!-- <add name="FusionMovil" connectionString="server=10.10.10.24;user id=fusion; password=prueba; database=fusionmovil_portal; pooling=true" providerName="MySql.Data.MySqlClient" /> -->
+      <add name="fusion_movil"
+         connectionString="server=10.10.10.24;user id=root; password=93396754; database=fusionmovil_portal; pooling=true"
+         providerName="MySql.Data.MySqlClient" />
+ </connectionStrings>
+  <appSettings>
+    <add key="Fondos.IdServicio" value="1"/>
+    <add key="Animaciones.IdServicio" value="2"/>
+    <add key="Tonos.IdServicio" value="3"/>
+    
+    <add key="SIA.user" value="fusion"/>
+    <add key="SIA.password" value="movil"/>
+    <add key="SIA.host" value="189.254.103.147:8088"/>
+  </appSettings>
+
+  <system.web>
+    <compilation debug="true" targetFramework="4.0">
+      <assemblies>
+        <add assembly="System.Web.Abstractions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Web.Routing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+        <add assembly="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31BF3856AD364E35" />
+      <add assembly="System.Data.Entity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /></assemblies>
+    </compilation>
+
+    <pages>
+      <namespaces>
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Routing" />
+      </namespaces>
+    </pages>
+    
+  </system.web>
+
+  <system.webServer>
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true" />
+  </system.webServer>
+
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <applicationSettings>
+    <Portal.My.MySettings>
+      <setting name="Portal_TransactionService_TransactionService"
+        serializeAs="String">
+        <value>http://189.254.103.147:8088/sia/services/Transaction</value>
+      </setting>
+      <setting name="Portal_FavoritesService_FavoritesService" serializeAs="String">
+        <value>http://189.254.103.147:8088/sia/services/Favorites</value>
+      </setting>
+      <setting name="Portal_TariffService_TariffService" serializeAs="String">
+        <value>http://189.254.103.147:8088/sia/services/Tariff</value>
+      </setting>
+      <setting name="Portal_UserService_UserService" serializeAs="String">
+        <value>http://189.254.103.147:8088/sia/services/User</value>
+      </setting>
+    </Portal.My.MySettings>
+  </applicationSettings>
+</configuration>
+

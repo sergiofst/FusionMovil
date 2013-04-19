@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+<RECORD>
+<idSuscripcion>1</idSuscripcion>
+<TransactionId>1</TransactionId>
+<idPortal>1</idPortal>
+<Telefono>8115315779</Telefono>
+<Creditos>0</Creditos>
+<FechaSuscripcion>2010/10/23 00:00:00</FechaSuscripcion>
+<FechaRenovacion>2010/10/25 00:00:00</FechaRenovacion>
+<Estatus>1</Estatus>
+</RECORD>
+</RECORDS>

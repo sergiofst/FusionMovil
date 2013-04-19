@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ProtGTPortal_TransactionService_TransactionService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://189.254.103.147:8088/sia/services/Transaction</Value>
+    </Setting>
+    <Setting Name="ProtGTPortal_UserService_UserService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://189.254.103.147:8088/sia/services/User</Value>
+    </Setting>
+    <Setting Name="ProtGTPortal_WebReference_TariffService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://189.254.103.147:8088/sia/services/Tariff</Value>
+    </Setting>
+    <Setting Name="ProtGTPortal_FavoritesService_FavoritesService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://189.254.103.147:8088/sia/services/Favorites</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

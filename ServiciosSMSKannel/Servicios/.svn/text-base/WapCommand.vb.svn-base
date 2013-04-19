@@ -1,0 +1,30 @@
+﻿Imports ServiciosSMSKannel.DAO
+
+Public Class WapCommand
+    Inherits Command
+
+    Public Overrides Function Execute(ByVal context As CommandContext) As ActionResult
+        Dim contClave As ContenidoClave = GetContenidoClave()
+        Dim cont As Contenido = GetContenido(contClave.IdContenido)
+
+        'Validar si la clave no es NUla.
+        Return SMS("Descarga tu contenido: www.gggg.com")
+    End Function
+
+    Private Function GetContenidoClave() As ContenidoClave
+        Return ContenidoClaveCache.Instance.FindContenidoClave(HttpContext, Nothing)
+    End Function
+
+    Private Function GetContenido(ByVal idContenido As Integer) As Contenido
+        Dim drContenido As DataRow = New ContenidosDAO(ConnectionString).GetContenido(idContenido)
+        Return New Contenido With {.IdContenido = CInt(drContenido("idContenido")), _
+                                   .IdServicio = CInt(drContenido("idServicio")), _
+                                   .Nombre = CStr(drContenido("Nombre")), _
+                                   .Texto = CStr(drContenido("Texto")), _
+                                   .Archivo = CStr(drContenido("Archivo")), _
+                                   .Estatus = CInt(drContenido("Estatus")), _
+                                   .Icono = CStr(drContenido("Icono")), _
+                                   .IconoDestacado = CStr(drContenido("IconoDestacado"))}
+    End Function
+
+End Class

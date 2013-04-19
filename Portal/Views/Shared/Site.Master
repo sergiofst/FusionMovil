@@ -1,0 +1,44 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN"
+"http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="TitleContent" runat="server" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="~/Resources/styles/reset-low.css" rel="stylesheet" type="text/css" />
+    <link href="~/Resources/styles/baseStyles-low.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <img src="<%=Me.ResolveUrl("~/Resources/images/banner_01.gif") %>" alt="Fusion Movil"/>
+        </div>
+        <div id="content">
+            <div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+        </div>
+        <div id="footer">
+            <% If Me.Request.Path <> "/" Then%>
+                <a href="<%=Me.ResolveUrl("~/Categorias.aspx/Index") %>">Inicio</a>
+            <%End If%>
+            <p>
+                <a href="<%=Me.ResolveUrl("~/Favoritos.aspx/Add") %>">Agregar a Favoritos</a>
+            </p>
+            <p>
+                <a href="http://upaapps.telcel.com:8582/telcelwap.wml">Ideas</a>
+            </p>
+            <p>
+                <a href="<%=Me.ResolveUrl("~/Ayuda.aspx") %>">Ayuda</a>
+                &nbsp;
+                <a href="<%=Me.ResolveUrl("~/Tarifas.aspx") %>">Tarifas</a>
+            </p>
+            <img src="<%=Me.ResolveUrl("~/Resources/images/footer.gif") %>" alt="Fusion Movil"/>
+            <p>Servicio a Clientes 01800-9999999</p>
+            <p>&copy; 2010 Fusion Movil</p>
+        </div>
+    </div>
+</body>
+</html>

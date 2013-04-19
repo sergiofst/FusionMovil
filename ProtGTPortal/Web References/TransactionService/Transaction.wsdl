@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://189.254.103.147:8088/sia/services/Transaction" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://189.254.103.147:8088/sia/services/Transaction" targetNamespace="http://189.254.103.147:8088/sia/services/Transaction" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="requestTransactionIntResponse">
+    <wsdl:part name="requestTransactionIntReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="requestTransactionIntRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="userTransactionId" type="soapenc:string" />
+    <wsdl:part name="srsRatingId" type="soapenc:string" />
+    <wsdl:part name="msisdn" type="soapenc:string" />
+    <wsdl:part name="contentId" type="soapenc:string" />
+    <wsdl:part name="contentName" type="soapenc:string" />
+    <wsdl:part name="urlOk" type="soapenc:string" />
+    <wsdl:part name="urlCancel" type="soapenc:string" />
+    <wsdl:part name="urlError" type="soapenc:string" />
+    <wsdl:part name="urlUnsusc" type="soapenc:string" />
+    <wsdl:part name="extraParam" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="requestTransactionRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="userTransactionId" type="soapenc:string" />
+    <wsdl:part name="srsRatingId" type="xsd:long" />
+    <wsdl:part name="msisdn" type="soapenc:string" />
+    <wsdl:part name="contentId" type="soapenc:string" />
+    <wsdl:part name="contentName" type="soapenc:string" />
+    <wsdl:part name="urlOk" type="soapenc:string" />
+    <wsdl:part name="urlCancel" type="soapenc:string" />
+    <wsdl:part name="urlError" type="soapenc:string" />
+    <wsdl:part name="urlUnsusc" type="soapenc:string" />
+    <wsdl:part name="extraParam" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="requestTransactionResponse">
+    <wsdl:part name="requestTransactionReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getStatusResponse">
+    <wsdl:part name="getStatusReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getStatusRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="transactionId" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="Transaction">
+    <wsdl:operation name="requestTransaction" parameterOrder="userId passwd userTransactionId srsRatingId msisdn contentId contentName urlOk urlCancel urlError urlUnsusc extraParam">
+      <wsdl:input name="requestTransactionRequest" message="impl:requestTransactionRequest" />
+      <wsdl:output name="requestTransactionResponse" message="impl:requestTransactionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="requestTransactionInt" parameterOrder="userId passwd userTransactionId srsRatingId msisdn contentId contentName urlOk urlCancel urlError urlUnsusc extraParam">
+      <wsdl:input name="requestTransactionIntRequest" message="impl:requestTransactionIntRequest" />
+      <wsdl:output name="requestTransactionIntResponse" message="impl:requestTransactionIntResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getStatus" parameterOrder="userId passwd transactionId">
+      <wsdl:input name="getStatusRequest" message="impl:getStatusRequest" />
+      <wsdl:output name="getStatusResponse" message="impl:getStatusResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TransactionSoapBinding" type="impl:Transaction">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="requestTransaction">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="requestTransactionRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="requestTransactionResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Transaction" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="requestTransactionInt">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="requestTransactionIntRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="requestTransactionIntResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Transaction" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getStatus">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getStatusRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getStatusResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Transaction" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TransactionService">
+    <wsdl:port name="Transaction" binding="impl:TransactionSoapBinding">
+      <wsdlsoap:address location="http://189.254.103.147:8088/sia/services/Transaction" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

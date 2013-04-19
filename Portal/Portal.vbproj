@@ -1,0 +1,518 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{26E61E1D-9A60-41AE-82CD-C26997C7A802}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Portal</RootNamespace>
+    <AssemblyName>Portal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>On</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Portal.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>Portal.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging">
+      <HintPath>..\Librerias\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.3.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\MySQL\MySQL Connector Net 6.3.5\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\Librerias\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions.Design">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Mvc" />
+    <Import Include="System.Web.Mvc.Ajax" />
+    <Import Include="System.Web.Mvc.Html" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\BaseController.vb" />
+    <Compile Include="Controllers\Constantes.vb" />
+    <Compile Include="Controllers\ContenidoController.vb" />
+    <Compile Include="Controllers\CreditosController.vb" />
+    <Compile Include="Controllers\FavoritosController.vb" />
+    <Compile Include="Controllers\HomeController.vb" />
+    <Compile Include="Controllers\ProtGTCommand.vb" />
+    <Compile Include="Controllers\SuscripcionesController.vb" />
+    <Compile Include="Controllers\ValidaCreditosAttribute.vb" />
+    <Compile Include="Helpers\AyudaController.vb" />
+    <Compile Include="Helpers\BaseHelper.vb" />
+    <Compile Include="Controllers\CategoriasController.vb" />
+    <Compile Include="Helpers\CategoriasHelper.vb" />
+    <Compile Include="Engine\MobileCapableWebFormViewEngine.vb" />
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\ContenidosHelper.vb" />
+    <Compile Include="Helpers\MasterHelper.vb" />
+    <Compile Include="Controllers\TarifasController.vb" />
+    <Compile Include="Jobs\RenuevaSuscripcionesJob.vb" />
+    <Compile Include="Jobs\SuscripcionesCron.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Models\AccountModels.vb" />
+    <Compile Include="Results\FondoActionResult.vb" />
+    <Compile Include="Views\Shared\Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Shared\Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web References\FavoritesService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TariffService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\TransactionService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\UserService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Browsers\Devices\mobile.browser_bak" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Contenido\Fondos\carro_01.jpg" />
+    <Content Include="Contenido\Fondos\carro_01_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_02.jpg" />
+    <Content Include="Contenido\Fondos\carro_02_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_03.jpg" />
+    <Content Include="Contenido\Fondos\carro_03_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_04.jpg" />
+    <Content Include="Contenido\Fondos\carro_04_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_05.jpg" />
+    <Content Include="Contenido\Fondos\carro_05_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_06.jpg" />
+    <Content Include="Contenido\Fondos\carro_06_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_07.jpg" />
+    <Content Include="Contenido\Fondos\carro_07_icono.jpg" />
+    <Content Include="Contenido\Fondos\carro_08.jpg" />
+    <Content Include="Contenido\Fondos\carro_08_icono.jpg" />
+    <Content Include="Contenido\Fondos\chica_01.jpg" />
+    <Content Include="Contenido\Fondos\chica_01_icono.jpg" />
+    <Content Include="Contenido\Fondos\chica_02.jpg" />
+    <Content Include="Contenido\Fondos\chica_02_icono.jpg" />
+    <Content Include="Contenido\Fondos\chica_03.jpg" />
+    <Content Include="Contenido\Fondos\chica_03_icono.jpg" />
+    <Content Include="Contenido\Fondos\chica_04.jpg" />
+    <Content Include="Contenido\Fondos\chica_04_icono.jpg" />
+    <Content Include="Contenido\Fondos\chica_05.jpg" />
+    <Content Include="Contenido\Fondos\chica_05_icono.jpg" />
+    <Content Include="Resources\Iconos\01-refresh.png" />
+    <Content Include="Resources\Iconos\02-redo.png" />
+    <Content Include="Resources\Iconos\03-loopback.png" />
+    <Content Include="Resources\Iconos\04-squiggle.png" />
+    <Content Include="Resources\Iconos\05-shuffle.png" />
+    <Content Include="Resources\Iconos\06-magnifying-glass.png" />
+    <Content Include="Resources\Iconos\07-map-marker.png" />
+    <Content Include="Resources\Iconos\08-chat.png" />
+    <Content Include="Resources\Iconos\09-chat2.png" />
+    <Content Include="Resources\Iconos\10-medical.png" />
+    <Content Include="Resources\Iconos\100-coffee.png" />
+    <Content Include="Resources\Iconos\101-gameplan.png" />
+    <Content Include="Resources\Iconos\102-walk.png" />
+    <Content Include="Resources\Iconos\103-map.png" />
+    <Content Include="Resources\Iconos\104-index-cards.png" />
+    <Content Include="Resources\Iconos\105-piano.png" />
+    <Content Include="Resources\Iconos\106-sliders.png" />
+    <Content Include="Resources\Iconos\107-widescreen.png" />
+    <Content Include="Resources\Iconos\108-badge.png" />
+    <Content Include="Resources\Iconos\109-chicken.png" />
+    <Content Include="Resources\Iconos\11-clock.png" />
+    <Content Include="Resources\Iconos\110-bug.png" />
+    <Content Include="Resources\Iconos\111-user.png" />
+    <Content Include="Resources\Iconos\112-group.png" />
+    <Content Include="Resources\Iconos\113-navigation.png" />
+    <Content Include="Resources\Iconos\114-balloon.png" />
+    <Content Include="Resources\Iconos\115-bow-and-arrow.png" />
+    <Content Include="Resources\Iconos\116-controller.png" />
+    <Content Include="Resources\Iconos\117-todo.png" />
+    <Content Include="Resources\Iconos\118-coathanger.png" />
+    <Content Include="Resources\Iconos\119-piggybank.png" />
+    <Content Include="Resources\Iconos\12-eye.png" />
+    <Content Include="Resources\Iconos\120-headphones.png" />
+    <Content Include="Resources\Iconos\121-lanscape.png" />
+    <Content Include="Resources\Iconos\122-stats.png" />
+    <Content Include="Resources\Iconos\123-id-card.png" />
+    <Content Include="Resources\Iconos\124-bullhorn.png" />
+    <Content Include="Resources\Iconos\125-food.png" />
+    <Content Include="Resources\Iconos\126-moon.png" />
+    <Content Include="Resources\Iconos\127-sock.png" />
+    <Content Include="Resources\Iconos\128-bone.png" />
+    <Content Include="Resources\Iconos\129-golf.png" />
+    <Content Include="Resources\Iconos\13-target.png" />
+    <Content Include="Resources\Iconos\130-dice.png" />
+    <Content Include="Resources\Iconos\14-tag.png" />
+    <Content Include="Resources\Iconos\15-tags.png" />
+    <Content Include="Resources\Iconos\16-line-chart.png" />
+    <Content Include="Resources\Iconos\17-bar-chart.png" />
+    <Content Include="Resources\Iconos\18-envelope.png" />
+    <Content Include="Resources\Iconos\19-gear.png" />
+    <Content Include="Resources\Iconos\20-gear2.png" />
+    <Content Include="Resources\Iconos\21-skull.png" />
+    <Content Include="Resources\Iconos\22-skull-n-crossbones.png" />
+    <Content Include="Resources\Iconos\23-bird.png" />
+    <Content Include="Resources\Iconos\24-gift.png" />
+    <Content Include="Resources\Iconos\25-weather.png" />
+    <Content Include="Resources\Iconos\26-bandaid.png" />
+    <Content Include="Resources\Iconos\27-planet.png" />
+    <Content Include="Resources\Iconos\28-star.png" />
+    <Content Include="Resources\Iconos\29-heart.png" />
+    <Content Include="Resources\Iconos\30-key.png" />
+    <Content Include="Resources\Iconos\31-ipod.png" />
+    <Content Include="Resources\Iconos\32-iphone.png" />
+    <Content Include="Resources\Iconos\33-cabinet.png" />
+    <Content Include="Resources\Iconos\34-coffee.png" />
+    <Content Include="Resources\Iconos\35-shopping-bag.png" />
+    <Content Include="Resources\Iconos\36-toolbox.png" />
+    <Content Include="Resources\Iconos\37-suitcase.png" />
+    <Content Include="Resources\Iconos\38-airplane.png" />
+    <Content Include="Resources\Iconos\39-spraycan.png" />
+    <Content Include="Resources\Iconos\40-inbox.png" />
+    <Content Include="Resources\Iconos\41-picture-frame.png" />
+    <Content Include="Resources\Iconos\42-photos.png" />
+    <Content Include="Resources\Iconos\43-film-roll.png" />
+    <Content Include="Resources\Iconos\44-shoebox.png" />
+    <Content Include="Resources\Iconos\45-movie1.png" />
+    <Content Include="Resources\Iconos\46-movie2.png" />
+    <Content Include="Resources\Iconos\47-fuel.png" />
+    <Content Include="Resources\Iconos\48-fork-and-knife.png" />
+    <Content Include="Resources\Iconos\49-battery.png" />
+    <Content Include="Resources\Iconos\50-beaker.png" />
+    <Content Include="Resources\Iconos\51-outlet.png" />
+    <Content Include="Resources\Iconos\52-pinetree.png" />
+    <Content Include="Resources\Iconos\53-house.png" />
+    <Content Include="Resources\Iconos\54-lock.png" />
+    <Content Include="Resources\Iconos\55-network.png" />
+    <Content Include="Resources\Iconos\56-cloud.png" />
+    <Content Include="Resources\Iconos\57-download.png" />
+    <Content Include="Resources\Iconos\58-bookmark.png" />
+    <Content Include="Resources\Iconos\59-flag.png" />
+    <Content Include="Resources\Iconos\60-signpost.png" />
+    <Content Include="Resources\Iconos\61-brightness.png" />
+    <Content Include="Resources\Iconos\62-contrast.png" />
+    <Content Include="Resources\Iconos\63-runner.png" />
+    <Content Include="Resources\Iconos\64-zap.png" />
+    <Content Include="Resources\Iconos\65-note.png" />
+    <Content Include="Resources\Iconos\66-microphone.png" />
+    <Content Include="Resources\Iconos\67-tshirt.png" />
+    <Content Include="Resources\Iconos\68-paperclip.png" />
+    <Content Include="Resources\Iconos\69-display.png" />
+    <Content Include="Resources\Iconos\70-tv.png" />
+    <Content Include="Resources\Iconos\71-compass.png" />
+    <Content Include="Resources\Iconos\72-pin.png" />
+    <Content Include="Resources\Iconos\73-radar.png" />
+    <Content Include="Resources\Iconos\74-location.png" />
+    <Content Include="Resources\Iconos\75-phone.png" />
+    <Content Include="Resources\Iconos\76-baby.png" />
+    <Content Include="Resources\Iconos\77-ekg.png" />
+    <Content Include="Resources\Iconos\78-stopwatch.png" />
+    <Content Include="Resources\Iconos\79-medical-bag.png" />
+    <Content Include="Resources\Iconos\80-shopping-cart.png" />
+    <Content Include="Resources\Iconos\81-dashboard.png" />
+    <Content Include="Resources\Iconos\82-dogpaw.png" />
+    <Content Include="Resources\Iconos\83-calendar.png" />
+    <Content Include="Resources\Iconos\84-lightbulb.png" />
+    <Content Include="Resources\Iconos\85-trophy.png" />
+    <Content Include="Resources\Iconos\86-camera.png" />
+    <Content Include="Resources\Iconos\87-wineglass.png" />
+    <Content Include="Resources\Iconos\88-beermug.png" />
+    <Content Include="Resources\Iconos\89-dumbbell.png" />
+    <Content Include="Resources\Iconos\90-lifebuoy.png" />
+    <Content Include="Resources\Iconos\91-beaker2.png" />
+    <Content Include="Resources\Iconos\92-testtube.png" />
+    <Content Include="Resources\Iconos\93-thermometer.png" />
+    <Content Include="Resources\Iconos\94-pill.png" />
+    <Content Include="Resources\Iconos\95-equalizer.png" />
+    <Content Include="Resources\Iconos\96-book.png" />
+    <Content Include="Resources\Iconos\97-puzzle.png" />
+    <Content Include="Resources\Iconos\98-palette.png" />
+    <Content Include="Resources\Iconos\99-umbrella.png" />
+    <Content Include="Resources\images\banner_01.gif" />
+    <Content Include="Resources\images\footer.gif" />
+    <Content Include="Resources\images\img-logo.png" />
+    <Content Include="Resources\images\img-lowend.png" />
+    <Content Include="Resources\images\logofusion1.jpg" />
+    <Content Include="Resources\styles\baseStyles-low.css" />
+    <Content Include="Resources\styles\reset-low.css" />
+    <Content Include="Docs\iPhone-App-Store-Screenshot.png" />
+    <Content Include="Docs\iphone-appstore-screenshot.jpg" />
+    <Content Include="Docs\p-480-320-dff53e11-591a-4c7a-9288-4cfd4a600304.jpg" />
+    <Content Include="Views\Ayuda\Index.aspx" />
+    <Content Include="Views\Categorias\Index.aspx" />
+    <Content Include="Views\Categorias\Ver.aspx" />
+    <Content Include="Views\Contenido\Buy.aspx" />
+    <Content Include="Views\Contenido\Cancel.aspx" />
+    <Content Include="Views\Contenido\Download.aspx" />
+    <Content Include="Views\Contenido\Error.aspx" />
+    <Content Include="Views\Contenido\List.aspx" />
+    <Content Include="Views\Contenido\Preview.aspx" />
+    <Content Include="Views\Creditos\Index.aspx" />
+    <Content Include="Views\Favoritos\Add.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <None Include="Resources\images\banner.psd" />
+    <None Include="Resources\images\footer.psd" />
+    <None Include="Web References\FavoritesService\Favorites.wsdl" />
+    <None Include="Web References\FavoritesService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\TariffService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\TariffService\Tariff.wsdl" />
+    <None Include="Web References\TransactionService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\TransactionService\Transaction.wsdl" />
+    <None Include="Web References\UserService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\UserService\User.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Views\Tarifas\Index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Resources\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Contenido\Categorias\Iconos\" />
+    <Folder Include="Contenido\Fondos\Iconos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FusionMovil.Data\FusionMovil.Data.vbproj">
+      <Project>{B83BB2D1-2A9C-4049-A817-A3826D6316D5}</Project>
+      <Name>FusionMovil.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://189.254.103.147:8088/sia/services/Favorites%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\FavoritesService\</RelPath>
+      <UpdateFromURL>http://189.254.103.147:8088/sia/services/Favorites%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Portal_FavoritesService_FavoritesService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://189.254.103.147:8088/sia/services/Tariff%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TariffService\</RelPath>
+      <UpdateFromURL>http://189.254.103.147:8088/sia/services/Tariff%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Portal_TariffService_TariffService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://189.254.103.147:8088/sia/services/Transaction%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TransactionService\</RelPath>
+      <UpdateFromURL>http://189.254.103.147:8088/sia/services/Transaction%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Portal_TransactionService_TransactionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://189.254.103.147:8088/sia/services/User%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\UserService\</RelPath>
+      <UpdateFromURL>http://189.254.103.147:8088/sia/services/User%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Portal_UserService_UserService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55246</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

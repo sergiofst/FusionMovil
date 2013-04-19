@@ -1,0 +1,201 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+<RECORD>
+<idTransaccion>1</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>3</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>2</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>3</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>4</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>5</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>6</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>7</idTransaccion>
+<transactionId>1111</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/16 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>8</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>9</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>10</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>11</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>12</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>13</idTransaccion>
+<transactionId>0</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>14</idTransaccion>
+<transactionId>8283803</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>15</idTransaccion>
+<transactionId>8283805</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>16</idTransaccion>
+<transactionId>8283806</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>17</idTransaccion>
+<transactionId>8283807</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>18</idTransaccion>
+<transactionId>8283808</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>19</idTransaccion>
+<transactionId>8283810</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>20</idTransaccion>
+<transactionId>8283812</transactionId>
+<idSuscripcion>0</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono>8115315779</Telefono>
+<Fecha>2010/10/21 00:00:00</Fecha>
+<Estatus>4</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>21</idTransaccion>
+<transactionId>8283901</transactionId>
+<idSuscripcion>1</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono></Telefono>
+<Fecha>2010/10/24 21:55:59</Fecha>
+<Estatus>0</Estatus>
+</RECORD>
+<RECORD>
+<idTransaccion>22</idTransaccion>
+<transactionId>8283902</transactionId>
+<idSuscripcion>1</idSuscripcion>
+<idContenido>1</idContenido>
+<Telefono></Telefono>
+<Fecha>2010/10/24 21:56:27</Fecha>
+<Estatus>2</Estatus>
+</RECORD>
+</RECORDS>

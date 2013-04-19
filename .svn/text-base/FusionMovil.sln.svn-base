@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Portal", "Portal\Portal.vbproj", "{26E61E1D-9A60-41AE-82CD-C26997C7A802}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FusionMovil.Data", "FusionMovil.Data\FusionMovil.Data.vbproj", "{B83BB2D1-2A9C-4049-A817-A3826D6316D5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "KannelServices", "KannelServices\KannelServices.vbproj", "{93568532-68EC-44B1-B4F3-E9D60909F30A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26E61E1D-9A60-41AE-82CD-C26997C7A802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E61E1D-9A60-41AE-82CD-C26997C7A802}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E61E1D-9A60-41AE-82CD-C26997C7A802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E61E1D-9A60-41AE-82CD-C26997C7A802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83BB2D1-2A9C-4049-A817-A3826D6316D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83BB2D1-2A9C-4049-A817-A3826D6316D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83BB2D1-2A9C-4049-A817-A3826D6316D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83BB2D1-2A9C-4049-A817-A3826D6316D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93568532-68EC-44B1-B4F3-E9D60909F30A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93568532-68EC-44B1-B4F3-E9D60909F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93568532-68EC-44B1-B4F3-E9D60909F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93568532-68EC-44B1-B4F3-E9D60909F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

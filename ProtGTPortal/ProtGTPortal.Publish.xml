@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Sergio\Desktop\Produccion\ProtGT" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Deployy" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/ProtGTPortal.dll" publishTime="02/15/2011 23:24:25" />
+    <file relUrl="Views/Home/Index.aspx" publishTime="02/02/2011 22:15:23" />
+    <file relUrl="Content/logo_protgt_240.gif" publishTime="02/07/2011 15:37:03" />
+    <file relUrl="Views/Shared/Mobile/iPhone/iPhone.Master" publishTime="02/02/2011 21:00:49" />
+    <file relUrl="Content/logo_240.jpg" publishTime="02/02/2011 22:26:21" />
+    <file relUrl="Global.asax" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Content/logofusion1.jpg" publishTime="01/29/2011 14:11:38" />
+    <file relUrl="bin/log4net.dll" publishTime="03/30/2006 13:24:28" />
+    <file relUrl="Web.config" publishTime="02/07/2011 20:38:04" />
+    <file relUrl="Scripts/MicrosoftAjax.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/ProtGT/Mobile/Baja.aspx" publishTime="02/03/2011 00:05:09" />
+    <file relUrl="Content/reset.css" publishTime="01/29/2011 13:55:59" />
+    <file relUrl="Views/ProtGT/Mobile/Index.aspx" publishTime="02/02/2011 23:49:38" />
+    <file relUrl="Content/iphone.css" publishTime="02/02/2011 21:00:31" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.debug.js" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Views/ProtGT/Index.aspx" publishTime="02/02/2011 23:03:40" />
+    <file relUrl="Views/Shared/LogOnUserControl.ascx" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Views/ProtGT/Mobile/Alta.aspx" publishTime="02/07/2011 16:49:51" />
+    <file relUrl="Content/Mobile.css" publishTime="02/07/2011 15:57:13" />
+    <file relUrl="Scripts/jquery.validate.min.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/ProtGT/Mobile/Procedimiento.aspx" publishTime="02/07/2011 16:43:00" />
+    <file relUrl="Views/Tarifas/Mobile/Index.aspx" publishTime="02/07/2011 20:31:52" />
+    <file relUrl="Content/text.css" publishTime="01/29/2011 13:55:59" />
+    <file relUrl="Views/Home/Mobile/iPhone/Index.aspx" publishTime="01/29/2011 13:36:11" />
+    <file relUrl="Scripts/jquery.validate.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/ProtGT/Mobile/Pendiente.aspx" publishTime="02/07/2011 13:00:03" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/Home/About.aspx" publishTime="01/29/2011 14:31:27" />
+    <file relUrl="Scripts/MicrosoftMvcValidation.js" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Scripts/jquery.validate-vsdoc.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.debug.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/Shared/Error.aspx" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Views/Shared/Site.Master" publishTime="01/29/2011 14:42:14" />
+    <file relUrl="Views/ProtGT/Mobile/DoAlta.aspx" publishTime="02/05/2011 14:10:40" />
+    <file relUrl="Content/style.css" publishTime="01/29/2011 14:28:58" />
+    <file relUrl="Views/Ayuda/Mobile/Index.aspx" publishTime="02/02/2011 22:50:48" />
+    <file relUrl="bin/ProtGTPortal.xml" publishTime="02/15/2011 23:24:25" />
+    <file relUrl="Views/Ayuda/Index.aspx" publishTime="02/02/2011 22:49:58" />
+    <file relUrl="Content/orientation.js" publishTime="01/29/2011 14:43:03" />
+    <file relUrl="Content/photo1-fpo.jpg" publishTime="01/29/2011 14:25:20" />
+    <file relUrl="Scripts/MicrosoftMvcAjax.js" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="Views/ProtGT/Mobile/Clausulas.aspx" publishTime="02/07/2011 16:42:49" />
+    <file relUrl="Content/960.css" publishTime="01/29/2011 13:55:59" />
+    <file relUrl="Views/Home/Mobile/Index.aspx" publishTime="02/02/2011 23:44:25" />
+    <file relUrl="Scripts/MicrosoftAjax.debug.js" publishTime="01/29/2011 13:29:12" />
+    <file relUrl="Views/Web.config" publishTime="01/29/2011 13:29:13" />
+    <file relUrl="bin/ProtGTPortal.pdb" publishTime="02/15/2011 23:24:25" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="01/29/2011 13:29:11" />
+    <file relUrl="Views/Shared/Mobile/Mobile.Master" publishTime="02/07/2011 20:34:22" />
+    <file relUrl="Views/ProtGT/Mobile/DoBaja.aspx" publishTime="02/06/2011 12:21:27" />
+    <file relUrl="Views/ProtGT/Mobile/Instrucciones.aspx" publishTime="02/07/2011 16:48:29" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="01/29/2011 13:29:11" />
+  </publishProfile>
+</publishData>

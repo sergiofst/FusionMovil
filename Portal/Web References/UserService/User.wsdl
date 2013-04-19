@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://192.168.1.120:8088/sia/services/User" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://192.168.1.120:8088/sia/services/User" targetNamespace="http://192.168.1.120:8088/sia/services/User" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="getProfileRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="msisdn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getProfileResponse">
+    <wsdl:part name="getProfileReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getMSISDNResponse">
+    <wsdl:part name="getMSISDNReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getMSISDNRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="imsi" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:portType name="User">
+    <wsdl:operation name="getMSISDN" parameterOrder="userId passwd imsi">
+      <wsdl:input name="getMSISDNRequest" message="impl:getMSISDNRequest" />
+      <wsdl:output name="getMSISDNResponse" message="impl:getMSISDNResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getProfile" parameterOrder="userId passwd msisdn">
+      <wsdl:input name="getProfileRequest" message="impl:getProfileRequest" />
+      <wsdl:output name="getProfileResponse" message="impl:getProfileResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UserSoapBinding" type="impl:User">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getMSISDN">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getMSISDNRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getMSISDNResponse">
+        <wsdlsoap:body use="encoded" namespace="http://192.168.1.120:8088/sia/services/User" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProfile">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getProfileRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getProfileResponse">
+        <wsdlsoap:body use="encoded" namespace="http://192.168.1.120:8088/sia/services/User" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UserService">
+    <wsdl:port name="User" binding="impl:UserSoapBinding">
+      <wsdlsoap:address location="http://189.254.103.147:8088/sia/services/User" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+<RECORD>
+<idContenido>1</idContenido>
+<idServicio>1</idServicio>
+<Nombre>Contenido 1</Nombre>
+<Archivo>~/Contenido/Fondos/9068.jpg</Archivo>
+<srsRatingId></srsRatingId>
+<Icono>~/Contenido/Fondos/9068_icono.gif</Icono>
+<IconoDestacado>~/Resources/Iconos/116-controller.png</IconoDestacado>
+<Estatus>1</Estatus>
+</RECORD>
+<RECORD>
+<idContenido>2</idContenido>
+<idServicio>1</idServicio>
+<Nombre>Contenido 2</Nombre>
+<Archivo>~/Contenido/Fondos/9068.jpg</Archivo>
+<srsRatingId></srsRatingId>
+<Icono>~/Contenido/Fondos/9068_icono.gif</Icono>
+<IconoDestacado>~/Resources/Iconos/116-controller.png</IconoDestacado>
+<Estatus>1</Estatus>
+</RECORD>
+<RECORD>
+<idContenido>3</idContenido>
+<idServicio>1</idServicio>
+<Nombre>Contenido 3</Nombre>
+<Archivo>~/Contenido/Fondos/9068.jpg</Archivo>
+<srsRatingId></srsRatingId>
+<Icono>~/Contenido/Fondos/9068_icono.gif</Icono>
+<IconoDestacado>~/Resources/Iconos/116-controller.png</IconoDestacado>
+<Estatus>1</Estatus>
+</RECORD>
+<RECORD>
+<idContenido>4</idContenido>
+<idServicio>1</idServicio>
+<Nombre>Contenido 4</Nombre>
+<Archivo>~/Contenido/Fondos/9068.jpg</Archivo>
+<srsRatingId></srsRatingId>
+<Icono>~/Contenido/Fondos/9068_icono.gif</Icono>
+<IconoDestacado>~/Resources/Iconos/116-controller.png</IconoDestacado>
+<Estatus>1</Estatus>
+</RECORD>
+<RECORD>
+<idContenido>5</idContenido>
+<idServicio>1</idServicio>
+<Nombre>Contenido 5</Nombre>
+<Archivo>~/Contenido/Fondos/9068.jpg</Archivo>
+<srsRatingId></srsRatingId>
+<Icono>~/Contenido/Fondos/9068_icono.gif</Icono>
+<IconoDestacado>~/Resources/Iconos/116-controller.png</IconoDestacado>
+<Estatus>1</Estatus>
+</RECORD>
+</RECORDS>

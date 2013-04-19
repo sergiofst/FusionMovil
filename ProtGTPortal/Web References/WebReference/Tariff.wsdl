@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:intf="http://189.254.103.147:8088/sia/services/Tariff" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:impl="http://189.254.103.147:8088/sia/services/Tariff" targetNamespace="http://189.254.103.147:8088/sia/services/Tariff" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types />
+  <wsdl:message name="getTariffIntResponse">
+    <wsdl:part name="getTariffIntReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getTariffResponse">
+    <wsdl:part name="getTariffReturn" type="soapenc:string" />
+  </wsdl:message>
+  <wsdl:message name="getTariffRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="srsRatingId" type="xsd:long" />
+  </wsdl:message>
+  <wsdl:message name="getTariffIntRequest">
+    <wsdl:part name="userId" type="soapenc:string" />
+    <wsdl:part name="passwd" type="soapenc:string" />
+    <wsdl:part name="srsRatingId" type="xsd:int" />
+  </wsdl:message>
+  <wsdl:portType name="Tariff">
+    <wsdl:operation name="getTariff" parameterOrder="userId passwd srsRatingId">
+      <wsdl:input name="getTariffRequest" message="impl:getTariffRequest" />
+      <wsdl:output name="getTariffResponse" message="impl:getTariffResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="getTariffInt" parameterOrder="userId passwd srsRatingId">
+      <wsdl:input name="getTariffIntRequest" message="impl:getTariffIntRequest" />
+      <wsdl:output name="getTariffIntResponse" message="impl:getTariffIntResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TariffSoapBinding" type="impl:Tariff">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="getTariff">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getTariffRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getTariffResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Tariff" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTariffInt">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="getTariffIntRequest">
+        <wsdlsoap:body use="encoded" namespace="http://webservice.sia.sm.com" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output name="getTariffIntResponse">
+        <wsdlsoap:body use="encoded" namespace="http://189.254.103.147:8088/sia/services/Tariff" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TariffService">
+    <wsdl:port name="Tariff" binding="impl:TariffSoapBinding">
+      <wsdlsoap:address location="http://189.254.103.147:8088/sia/services/Tariff" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

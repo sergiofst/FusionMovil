@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<RECORDS>
+<RECORD>
+<idContenidoInfo>1</idContenidoInfo>
+<idContenido>1</idContenido>
+<Etiqueta>Descripcion</Etiqueta>
+<Valor>Esta es la descripcion del contenido</Valor>
+<Estatus>1</Estatus>
+</RECORD>
+<RECORD>
+<idContenidoInfo>2</idContenidoInfo>
+<idContenido>1</idContenido>
+<Etiqueta>Autor</Etiqueta>
+<Valor>Este es el autor del contenido</Valor>
+<Estatus>1</Estatus>
+</RECORD>
+</RECORDS>

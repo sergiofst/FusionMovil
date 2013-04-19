@@ -1,0 +1,40 @@
+10
+
+dir
+34
+https://10.10.10.24:8443/svn/FusionMovil/trunk/Portal/Web%20References
+https://10.10.10.24:8443/svn/FusionMovil
+
+
+
+2010-10-26T03:36:17.824879Z
+2
+sserrano
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3cf5f037-51b7-404e-98e2-feb800658894
+
+UserService
+dir
+
+FavoritesService
+dir
+
+TransactionService
+dir
+
+TariffService
+dir
+

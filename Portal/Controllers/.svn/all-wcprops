@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/FusionMovil/!svn/ver/27/trunk/Portal/Controllers
+END
+HomeController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FusionMovil/!svn/ver/10/trunk/Portal/Controllers/HomeController.vb
+END
+SuscripcionesController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FusionMovil/!svn/ver/11/trunk/Portal/Controllers/SuscripcionesController.vb
+END
+TarifasController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/FusionMovil/!svn/ver/2/trunk/Portal/Controllers/TarifasController.vb
+END
+BaseController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/FusionMovil/!svn/ver/27/trunk/Portal/Controllers/BaseController.vb
+END
+FavoritosController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FusionMovil/!svn/ver/2/trunk/Portal/Controllers/FavoritosController.vb
+END
+ValidaCreditosAttribute.vb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FusionMovil/!svn/ver/2/trunk/Portal/Controllers/ValidaCreditosAttribute.vb
+END
+CategoriasController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FusionMovil/!svn/ver/2/trunk/Portal/Controllers/CategoriasController.vb
+END
+ContenidoController.vb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FusionMovil/!svn/ver/10/trunk/Portal/Controllers/ContenidoController.vb
+END

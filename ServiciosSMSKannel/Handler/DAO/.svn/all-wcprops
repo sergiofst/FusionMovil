@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO
+END
+ContenidosDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/ContenidosDAO.vb
+END
+ServiciosDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/ServiciosDAO.vb
+END
+ContenidoClave.vb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/ContenidoClave.vb
+END
+BaseDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/BaseDAO.vb
+END
+ServicioClave.vb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/ServicioClave.vb
+END
+Contenido.vb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/Contenido.vb
+END
+HistorialDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/HistorialDAO.vb
+END
+Servicio.vb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/Servicio.vb
+END
+VentasDAO.vb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DAO/VentasDAO.vb
+END

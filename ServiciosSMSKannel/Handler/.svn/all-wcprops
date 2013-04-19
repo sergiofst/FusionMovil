@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler
+END
+CommandBase.vb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/CommandBase.vb
+END
+MultiSMSActionResult.vb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/MultiSMSActionResult.vb
+END
+KannelConstantes.vb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/KannelConstantes.vb
+END
+DefaultCommandFactory.vb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DefaultCommandFactory.vb
+END
+ActionResult.vb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ActionResult.vb
+END
+Command.vb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/Command.vb
+END
+ICommandFactory.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ICommandFactory.vb
+END
+RandomCommand.vb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/RandomCommand.vb
+END
+ContenidoClaveCache.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ContenidoClaveCache.vb
+END
+Constantes.vb
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/Constantes.vb
+END
+CommandContext.vb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/CommandContext.vb
+END
+DobleCommand.vb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/DobleCommand.vb
+END
+WapPushActionResult.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/WapPushActionResult.vb
+END
+CommandBuilder.vb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/CommandBuilder.vb
+END
+ICommand.vb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ICommand.vb
+END
+KannelSMSSender.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/KannelSMSSender.vb
+END
+SMSActionResult.vb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/SMSActionResult.vb
+END
+ForwardActionResult.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ForwardActionResult.vb
+END
+SMSServicesHandler.vb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/SMSServicesHandler.vb
+END
+ServiciosClaveCache.vb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/FusionMovil/!svn/ver/57/trunk/ServiciosSMSKannel/Handler/ServiciosClaveCache.vb
+END
